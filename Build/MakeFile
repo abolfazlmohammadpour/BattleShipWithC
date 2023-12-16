@@ -1,0 +1,11 @@
+.DEFAULT_GOAL := CreateAndRunExecutableOutput
+
+CreateExecutableOutput:
+	@ gcc ./Source/main.c -ansi -o ./Output/main.out
+
+RunExecutableOutput:
+	@ ./Output/main.out
+
+CreateAndRunExecutableOutput:
+	@ gcc ./Source/main.c -ansi -o ./Output/main.out
+	@ ./Output/main.out
